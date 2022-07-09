@@ -1,13 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const SLIDES = [
+  {
+    title: "TITLE ONE",
+    text: "Text of first slide",
+  },
+  {
+    title: "TITLE TWO",
+    text: "Text of second slide",
+  },
+  {
+    title: "TITLE  THREE",
+    text: "Text of third slide",
+  },
+  {
+    title: "TITLE  FOUR",
+    text: "Text of fourth slide",
+  },
+  {
+    title: "TITLE  FIVE",
+    text: "Text of fifth slide",
+  },
+];
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <App slides={SLIDES} />
   </React.StrictMode>
 );
 
